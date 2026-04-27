@@ -160,16 +160,6 @@ This project is licensed under the **MIT License**.
 
 ---
 
-## 💡 Future Improvements (Optional Ideas)
-
-* Cloud sync (Firebase / Azure)
-* User authentication
-* Recipe image uploads
-* Export to PDF
-* Nutrition analytics dashboard
-
----
-
 ## 👤 Author
 
 **Sizwe Mthembu**
