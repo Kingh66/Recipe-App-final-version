@@ -1,68 +1,178 @@
-1)instructions for how to compile and run the software
+# 🍲 Recipe Manager Desktop App
 
--Recipe App
-This recipe app allows you to create, filter, and view recipes with their ingredients and steps.
+A robust and intuitive **WPF desktop application** built with **C# and .NET**, designed to help users create, manage, filter, and explore detailed recipe structures with ease.
 
--Features
-Add new recipes with a name, food group, ingredients, and steps.
-Filter recipes based on ingredient name, food group, and total calories.
-View recipe details including ingredients and steps.
-Refresh the recipe list to see the latest changes.
+---
 
--Getting Started
+## ✨ Features
 
-To use the app, follow these steps:
+### 🧾 Create Recipes
 
-Clone the repository to your local machine.
-Open the project in Visual Studio or any other compatible IDE.
-Build the project to restore dependencies and compile the code.
-Run the application on a compatible device or simulator.
+* Add recipes with:
 
--Adding a New Recipe
+  * Name
+  * Food group
+  * Ingredients (name, quantity, measurement, calories)
+  * Step-by-step instructions
 
-Launch the app.
-In the "Add New Recipe" section, enter the recipe name in the "Recipe Name" textbox.
-Select the food group from the "Food Group" dropdown.
-Click the "Add Ingredient" button to add ingredients to the recipe.
-Enter the ingredient name, quantity, measurement, and calories in the respective textboxes.
-Click the "Save Ingredient" button to save the ingredient and add it to the recipe.
-Enter the steps for the recipe in the "Steps" textbox, one step per line.
-Click the "Save Recipe" button to save the recipe.
-The recipe will appear in the recipe list.
+### 🔍 Dynamic Filtering
 
--Filtering Recipes
+Instantly filter recipes by:
 
-In the "Filter Recipes" section, enter an ingredient name in the "Enter ingredient name" textbox to filter recipes that contain that ingredient.
-Select a food group from the "Select food group" dropdown to filter recipes belonging to that food group.
-Enter a value in the "Enter total calories" textbox to filter recipes with a total calorie count lower than or equal to that value.
-Click the "Apply Filters" button to apply the filters.
-The recipe list will display the filtered recipes.
+* Ingredient name
+* Food group category
+* Maximum total calorie count
 
--Viewing Recipe Details
+### 📖 Detailed View
 
-In the recipe list, click on a recipe name to view its details.
-The recipe details will expand, showing the recipe name, ingredients, and steps.
-The ingredients will be listed with their name, quantity, measurement, and calories.
-The steps will be listed one after the other.
-Scroll down to view all the steps if necessary.
+* Expand recipes to view:
 
--Refreshing the Recipe List
+  * Structured ingredient breakdown
+  * Quantities and measurements
+  * Calorie information
+  * Preparation steps
 
-To see the latest changes or reset the filters, click the "Refresh Recipes" button.
-The recipe list will be updated, showing all the recipes.
+### 🔄 Data Management
 
-2) a link to your GitHub repository
+* Refresh recipe list
+* Reset filters
+* Load latest updates seamlessly
 
-https://github.com/Kingh66?tab=repositories
+---
 
-3)a brief description (100 to 200 words) of what i have changed
+## 🛠️ Tech Stack
 
-Background Image: A background image was added to the main page using the ImageBrush class. This provides a visually appealing background for the app.
+* **Language:** C#
+* **Framework:** .NET (WPF)
+* **UI Markup:** XAML
+* **Architecture:** MVVM (Model-View-ViewModel)
+* **Data Storage:** Local storage
 
-Recipe Creation: The recipe creation section now includes a scroll viewer to allow easy navigation when creating lengthy recipes. The steps textbox also includes a placeholder and accepts the "Enter" key after each step for better usability.
+---
 
-Recipe Detail Display: The recipe detail section now displays the recipe name, ingredients, and steps in an organized manner. The ingredient and step lists are bound to their respective data sources, making it easy to dynamically update the details based on the selected recipe.
+## 🚀 Getting Started
 
-Ingredient Addition: The ingredient addition section now includes a cancel button, allowing users to discard the input and go back to the recipe creation section. This improves the user experience and provides more flexibility when adding ingredients.
+### ✅ Prerequisites
 
-Filtering and Refreshing: The filtering functionality allows users to filter recipes based on ingredient name, food group, and total calories. Applying the filters updates the recipe list accordingly. Additionally, a refresh button was added to reset the filters and display all recipes.
+* Visual Studio 2022 or newer
+* ".NET desktop development" workload installed
+
+---
+
+### ⚙️ Installation & Running
+
+```bash
+git clone https://github.com/Kingh66/Recipe-App-final-version.git
+```
+
+1. Open the project
+
+   * Navigate to the folder
+   * Double-click the `.sln` file
+
+2. Restore dependencies
+
+   * Right-click solution → **Restore NuGet Packages**
+
+3. Run the application
+
+   * Press **F5** or click **Start**
+
+---
+
+## 📖 How to Use
+
+### ➕ Adding a Recipe
+
+1. Enter recipe name and select a food group
+2. Click **Add Ingredient**
+
+   * Fill in details
+   * Click **Save Ingredient**
+3. Enter preparation steps
+
+   * Press **Enter** to add new steps
+4. Click **Save Recipe**
+
+---
+
+### 🔎 Filtering Recipes
+
+* Use filter panel:
+
+  * Ingredient name
+  * Food group
+  * Max calories
+* Click **Apply Filters**
+
+---
+
+### 👀 Viewing Recipe Details
+
+* Click any recipe in the list
+* Expand to view full details
+
+---
+
+### 🔄 Refreshing Data
+
+* Click **Refresh Recipes**
+
+  * Clears filters
+  * Reloads full dataset
+
+---
+
+## 👨‍💻 Developer Notes
+
+### 🎨 UI & UX Enhancements
+
+* Used `ImageBrush` in XAML for custom background styling
+* Clean and modern layout for better usability
+
+### 🔗 Data Binding
+
+* Fully dynamic binding for:
+
+  * Ingredients list
+  * Steps list
+* UI updates automatically without manual refresh
+
+### 📜 Input Handling
+
+* `Enter` key creates new steps
+* Smooth multi-step entry experience
+
+### 📜 Scroll Management
+
+* Integrated `ScrollViewer` for handling long content
+
+### ❌ User Control
+
+* Added **Cancel button** during ingredient creation
+* Allows quick input discard without breaking flow
+
+---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 💡 Future Improvements (Optional Ideas)
+
+* Cloud sync (Firebase / Azure)
+* User authentication
+* Recipe image uploads
+* Export to PDF
+* Nutrition analytics dashboard
+
+---
+
+## 👤 Author
+
+**Sizwe Mthembu**
+Software Developer | Focused on clean UI, real-world usability, and scalable systems
+
+---
